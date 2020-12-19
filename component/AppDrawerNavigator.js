@@ -7,7 +7,7 @@ import SignupLoginScreen from '../screens/SignupLoginScreen';
 import {AppTabNavigator} from './AppTabNavigator';
 import CustomSideBarMenu from './customSideBarMenu';
 
-const AppDrawerNavigator = createDrawerNavigator({
+export const AppDrawerNavigator = createDrawerNavigator({
     Home:{
         screen: AppTabNavigator
     },
@@ -19,7 +19,7 @@ const AppDrawerNavigator = createDrawerNavigator({
     contentComponent:CustomSideBarMenu
 },
 {
-    initialRootName: 'Home'
+    initialRouteName: 'Home'
 }
 )
 
